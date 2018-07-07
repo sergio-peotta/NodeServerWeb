@@ -2,5 +2,5 @@
 
 ```
 git push heroku
-heroku open
+heroku [open](https://limitless-hamlet-92464.herokuapp.com/)
 ```
