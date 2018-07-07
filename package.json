@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sergio-peotta/NodeServerWeb#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.14.0",
+    "hbs": "^4.0.0"
   }
 }
