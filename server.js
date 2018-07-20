@@ -13,7 +13,9 @@ app.use((req, res, next) => {
     var log = now + ':' + req.method + ' ' + req.url;
     console.log(log);
     fs.appendFile('server.log', log + '\n', (err) => {
-        if(err) { console.log('Unable to append to server.log : ' + err); }
+        if (err) {
+            console.log('Unable to append to server.log : ' + err);
+        }
     });
     next();
 });
@@ -41,7 +43,6 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page',
-        currentYear: new Date().getFullYear(),
         welcomeMessage: 'This is About page.'
     });
 });
@@ -49,6 +50,13 @@ app.get('/about', (req, res) => {
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
         pageTitle: 'Projects'
+    });
+});
+
+app.get('/images', (req, res) => {
+    res.render('images.hbs', {
+        pageTitle: 'Images',
+        welcomeMessage: 'Manage images.'
     });
 });
 
