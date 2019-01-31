@@ -12,3 +12,10 @@ git remote rm heroku
 
 # per la lista
 git remote -v
+
+Update: If you don’t have your heroku remote created, do this:
+
+heroku create
+git remote set-url heroku git@heroku.com:hidden-ridge-8790.git
+
+git push heroku master
