@@ -1,2 +1,2 @@
-cd h:\Progetti\UnPoDiTutto\Node\NodeServerWeb\src
+cd E:\Progetti\NodeServerWeb
 node server.js

@@ -1,2 +1,4 @@
 echo off
-node h:\Progetti\UnPoDiTutto\Node\NodeServerWeb\src\server.js
+E:
+cd E:\Progetti\NodeServerWeb
+node server.js
